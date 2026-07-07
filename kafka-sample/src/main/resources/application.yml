@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: testGroup
+      auto-offset-reset: earliest
+      value-deserializer: org.springframework.kafka.support.serializer.JacksonJsonDeserializer
+      properties:
+        spring.json.trusted.packages: org.hongxi.boot4.kafka
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
