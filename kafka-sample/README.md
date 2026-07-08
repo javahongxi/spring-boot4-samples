@@ -97,6 +97,8 @@ bin/kafka-server-start.sh config/server-2.properties
 bin/kafka-server-start.sh config/server-3.properties
 ```
 
+> 启动第1个节点时会刷屏 WARN 日志（如 `Connection to node 2 could not be established`），这是正常的，因为其他节点尚未启动。继续启动第2、3个节点后，集群会自动组网，日志恢复正常。
+
 ### 5. 验证集群
 
 连接任一Broker地址即可，例如：
