@@ -1,0 +1,13 @@
+spring:
+  grpc:
+    server:
+      port: 9090
+
+management:
+  otlp:
+    metrics:
+      export:
+        enabled: false
+  tracing:
+    sampling:
+      probability: 1.0

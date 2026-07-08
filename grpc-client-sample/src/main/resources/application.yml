@@ -1,0 +1,15 @@
+spring:
+  grpc:
+    client:
+      channel:
+        default:
+          target: static://localhost:9090
+
+management:
+  otlp:
+    metrics:
+      export:
+        enabled: false
+  tracing:
+    sampling:
+      probability: 1.0
