@@ -1,0 +1,13 @@
+package org.hongxi.boot4.redis;
+
+import java.io.Serial;
+import java.io.Serializable;
+import java.util.Date;
+
+/**
+ * @author hongxi
+ */
+public record User(String name, Integer age, Date createDate) implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 4064009692985107575L;
+}

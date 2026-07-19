@@ -22,6 +22,7 @@
         <module>webmvc-sample</module>
         <module>grpc-server-sample</module>
         <module>grpc-client-sample</module>
+        <module>redis-sample</module>
     </modules>
 
     <properties>
